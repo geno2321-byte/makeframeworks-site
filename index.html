@@ -27,6 +27,14 @@
   .grid p, .ko p { color:var(--muted); font-size:15px; }
   .ko p + p { margin-top:10px; }
   .contact a { color:var(--accent); font-size:22px; font-weight:600; text-decoration:none; }
+  .work { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:28px; }
+  .feature { grid-column:1/-1; }
+  .work video, .card img { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px; background:#000; display:block; }
+  figcaption, .card span { display:block; color:var(--muted); font-size:15px; margin-top:10px; }
+  .card { color:var(--ink); text-decoration:none; }
+  .card b { display:block; margin-top:12px; }
+  .more { margin-top:28px; color:var(--muted); font-size:15px; }
+  .more a { color:var(--accent); font-weight:600; text-decoration:none; margin-right:6px; }
   footer { padding:36px 0 48px; color:var(--muted); font-size:13px; }
 </style>
 </head>
@@ -41,6 +49,25 @@
     <h1>We make video content<br>with <span>AI-native</span> pipelines.</h1>
     <p class="lead">Frameworks is a media content studio based in Korea. We build Claude-powered production pipelines that turn one idea into a finished YouTube video — script, voice, motion graphics and publishing.</p>
   </div>
+
+  <section>
+    <h2>Selected work</h2>
+    <div class="work">
+      <figure class="feature">
+        <video src="assets/brand-film.mp4" poster="assets/brand-film.jpg" controls playsinline preload="none"></video>
+        <figcaption><b>Brand film</b> — promotional video for a marketing agency client. Script, motion graphics and edit produced with our pipeline.</figcaption>
+      </figure>
+      <a class="card" href="https://www.youtube.com/watch?v=HOjNnpm9_V0" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/HOjNnpm9_V0/hqdefault.jpg" alt="" loading="lazy">
+        <b>Lucy AI Studio · Episode</b><span>A 9-minute tutorial on starting shopping shorts from zero — AI voiceover and code-driven motion graphics.</span>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=os00pPdiIec" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/os00pPdiIec/hqdefault.jpg" alt="" loading="lazy">
+        <b>Lucy AI Studio · Episode</b><span>An explainer on AI content and YouTube monetization, produced end-to-end with Claude Code.</span>
+      </a>
+    </div>
+    <p class="more"><a href="https://www.youtube.com/@Lucy_ai_secretnote" target="_blank" rel="noopener">Lucy AI Studio on YouTube →</a> Our in-house channel, fully produced with our AI pipeline.</p>
+  </section>
 
   <section>
     <h2>What we do</h2>
